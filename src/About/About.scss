@@ -1,0 +1,30 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    > * {
+        display: inline-block;
+        overflow: hidden;
+
+    }
+    h3 {
+        width: 67%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(42, 42, 42, 0.42);
+    }
+    h4 {
+        text-align: center;
+
+    }
+    p {
+        margin: 0 auto;
+        text-align: justify;
+        > i {
+            font-size: 3rem;
+            line-height: 1.5rem;
+            vertical-align: text-bottom;
+        }
+    }
+}

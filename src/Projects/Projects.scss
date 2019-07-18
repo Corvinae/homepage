@@ -1,0 +1,120 @@
+$lang-colors: (
+    // https://github.com/doda/github-language-colors/blob/master/colors.json
+    "JavaScript": #f1e05a, 
+    "TypeScript": #2b7489,
+    "Python": #3572A5, 
+    "Rust": #dea584, 
+    "Java": #b07219, 
+);
+
+.Projects {
+    ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        div {
+            display: block;
+            margin: .5rem auto;
+            padding: 1rem 0 1rem 1rem;
+            border: 1px solid rgba(49, 48, 48, 0.5);
+            border-radius: 2px;
+            width: calc(100% - 2rem);
+
+            h5 {
+                // padding: .3rem;
+                margin: 0 0 .25rem .5rem;
+            }
+            p {
+                margin: 0 auto;
+                text-align: justify;
+                display: inline-block;
+                line-height: 18px;
+                margin-left: 1rem;
+                margin-bottom: .12rem;
+                padding-right: 2rem;
+            }
+            p:last-of-type {
+                padding-top: .67rem;
+            }
+            .update, .projectLang {
+                font-size: .85rem;
+                line-height: 18px;
+            }
+            .update {
+                vertical-align: bottom;
+                line-height: 17px;
+            }
+            
+        
+        }
+    }
+    .repolang {
+        vertical-align: text-top;
+        z-index: 1000;
+        content: '';
+        display: inline-block;
+        border-radius: 100%;
+        width: 14px;
+        height: 14px;
+        line-height: 18px;
+        margin-right: 4px;
+        background: inherit;
+    }
+    .repolang-JavaScript {background: map-get($lang-colors, "JavaScript");}
+    .repolang-TypeScript {background: map-get($lang-colors, "TypeScript");}
+    .repolang-Python {background: map-get($lang-colors, "Python");}
+    .repolang-Rust {background: map-get($lang-colors, "Rust");}
+    .repolang-Java {background: map-get($lang-colors, "Java");}
+}
+
+@media screen and (min-width: 520px) {
+
+    .Projects {
+        ul {
+            display: flex;
+            flex-direction: column;
+            div {
+
+                
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .Projects {
+        ul {
+            display: flex;
+            flex-direction: column;
+            div {
+
+                
+
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1160px) {
+
+    .Projects {
+        ul {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            align-items: center;
+            div {
+
+                
+
+            }
+
+        }
+    }
+
+}
