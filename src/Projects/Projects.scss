@@ -5,6 +5,7 @@ $lang-colors: (
     "Python": #3572A5, 
     "Rust": #dea584, 
     "Java": #b07219, 
+    "CSS": #563d7c,
 );
 
 .Projects {
@@ -66,6 +67,7 @@ $lang-colors: (
     .repolang-Python {background: map-get($lang-colors, "Python");}
     .repolang-Rust {background: map-get($lang-colors, "Rust");}
     .repolang-Java {background: map-get($lang-colors, "Java");}
+    .repolang-CSS {background: map-get($lang-colors, "CSS");}
 }
 
 @media screen and (min-width: 520px) {
