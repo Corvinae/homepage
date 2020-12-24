@@ -35,10 +35,10 @@ export default class Header extends Component {
             <section className="Header">
                 <div className="bb"></div>
                 <h1>Benjamin Ellis</h1>
-                <div className="E-mail"><h3 id="email">ben@niftlabs.io</h3><a id="mail" href="mailto:ben@niftlabs.io"><img id="mail-icon" alt="Mailto" src={mail} /></a> <a id="copy" href="/#"><img id="copy-icon" alt="Copy E-mail" src={copy} /></a></div>
+                <div className="E-mail"><h3 id="email">mail@benellis.dev</h3><a id="mail" href="mailto:mail@benellis.dev"><img id="mail-icon" alt="Mailto" src={mail} /></a> <a id="copy" href="/#"><img id="copy-icon" alt="Copy E-mail" src={copy} /></a></div>
                 <img src={img} alt="The author, Benjamin Ellis"></img>
                 <ul>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Corvinae"><img alt="Github" src={github} /> @Corvinae</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/b14s"><img alt="Github" src={github} /> @b14s</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/benjamintellis/"><img alt="LinkedIn" src={linkedin} />/in/benjamintellis/</a></li>
                 </ul>
             </section>

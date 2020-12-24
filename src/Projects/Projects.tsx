@@ -44,7 +44,7 @@ export default class Projects extends Component<ProjectsProps, ProjectsState> {
     }
 
     componentWillMount() {
-        fetch('https://api.github.com/users/Corvinae/repos?type=all?sort=updated', { headers: { 'Accept': 'application/vnd.github.v3+json' }, method: 'GET' }).then((res) => res.json()).then((data) => {
+        fetch('https://api.github.com/users/b14s/repos?type=all?sort=updated', { headers: { 'Accept': 'application/vnd.github.v3+json' }, method: 'GET' }).then((res) => res.json()).then((data) => {
             data.map((arr: any) => {
                 console.log(arr);
                 let tmp: Project = { name: arr.name, description: arr.description, language: arr.language, updated: arr.updated_at, url: arr.html_url };
@@ -71,7 +71,7 @@ export default class Projects extends Component<ProjectsProps, ProjectsState> {
                                 )
                             )}
                         </ul>
-                        <a href="https://github.com/Corvinae">More on Github...</a>
+                        <a href="https://github.com/b14s">More on Github...</a>
                     </>
                 ) : (
                         <div id="projectsLoading">Loading...</div>
